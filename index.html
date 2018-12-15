@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vesl</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/min/prism.css">
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    <!-- GitHub Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body data-spy="scroll">
+
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+        <div class="container">
+            <h1 class="logo float-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">Vesl</span>
+                </a>
+            </h1><!--//logo-->
+            <nav id="main-nav" class="main-nav navbar-expand-md float-right" role="navigation">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><!--//nav-toggle-->
+
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item sr-only"><a class="nav-link scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#docs">Docs</a></li>
+                        <li class="nav-item"><a class="nav-link scrollto" href="#license">License</a></li>
+                        <li class="nav-item last"><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Vesl<span class="highlight"></span></h2>
+            <p class="intro">A Drupal environment with batteries included.</p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="https://www.youtube.com/channel/UCyOXWTxea5FbOcyIjbB9SvA" target="_blank" rel="noopener noreferrer">Video Docs</a>
+                <a class="btn btn-cta-primary" href="https://github.com/Jantcu/vesl/archive/master.zip" target="_blank" rel="noopener noreferrer">Download</a>
+            </div>
+            <ul class="meta list-inline">
+                <li class="list-inline-item"><a href="https://github.com/Jantcu/vesl" target="_blank" rel="noopener noreferrer">View on GitHub</a></li>
+                <li class="list-inline-item">Created by: <a href="http://jantcu.com" target="_blank" rel="noopener noreferrer">Jantcu</a></li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+        <div class="social-media">
+            <div class="social-media-inner container text-center">
+                <ul class="list-inline mb-2">
+                    <li class="list-inline-item twitter-follow"><a href="https://twitter.com/jantcutech" class="twitter-follow-button" data-show-count="false">Follow @jantcutech</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-follow-->
+                    <li class="list-inline-item twitter-tweet">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-via="jantcutech" data-hashtags="vesl, docker, drupal, lamp">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </li><!--//twitter-tweet-->
+                    <!--// Generate github buttons: https://github.com/mdo/github-buttons -->
+                    <li class="list-inline-item github-star">
+<a class="github-button" href="https://github.com/Jantcu/vesl" data-icon="octicon-star" aria-label="Star Jantcu/vesl on GitHub">Star</a></li>
+                    <li class="list-inline-item github-follow"><!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/Jantcu" aria-label="Follow @Jantcu on GitHub">Follow @Jantcu</a></li>
+                </ul>
+            </div>
+        </div>
+    </section><!--//promo-->
+
+    <!-- ******ABOUT****** -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">What is Vesl?</h2>
+            <p class="intro text-center">Vesl is the easiest and quickest way to spin up a Drupal website. Out of the box it comes with all the tools you'll need for development so you don't have to spend time cobbling these together yourself.</p>
+            <div class="row">
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Docker</h3>
+                        <p>Under the hood Vesl uses Docker so it's very lightweight and blazingly fast to start up. Everything is powered by preconfigured images that you can access directly on <a href="https://hub.docker.com/u/vesl" target="_blank" rel="noopener noreferrer">Docker Hub</a>.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Vim IDE</h3>
+                        <p>Our command line text editor is complete with a full-fledged debugger, definition lookup, file browser, search, auto-completion, syntax highlighting, code linting, and many more features.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Tmux</h3>
+                        <p>Split your terminal into multiple panes or windows to run processes like Sass, Grunt, or Gulp. You can save all your sessions after stopping a vesl using <a href="https://github.com/tmux-plugins/tmux-resurrect" target="_blank" rel="noopener noreferrer">Resurrect</a>.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="clearfix visible-md"></div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">MyCLI</h3>
+                        <p>Autocompletion and syntax highlighting for your MySQL prompt and an improved paged output (<code>pager less -SFX</code>) allows you to manage your database without needing a GUI.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Tig</h3>
+                        <p>Visual representation for your branches and git history. Quickly see exactly what files looked like at any given point in time. Review diffs on specific files and search through history with <a href="https://en.wikipedia.org/wiki/Grep" target="_blank" rel="noopener noreferrer">grep</a>.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Drush and Drupal Console</h3>
+                        <p>Includes all Drupal specific tools for running tasks on the command line. Clear caches, build out module scaffolding, or manage your site configuration without leaving your terminal.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//about-->
+
+    <!-- ******FEATURES****** -->
+    <section id="features" class="features section">
+        <div class="container">
+            <h2 class="title text-center">Features</h2>
+            <div class="row">
+              <div class="item col-lg-6 col-md-12 col-12">
+                <ul class="feature-list list-unstyled">
+                  <li><i class="fas fa-check"></i> Git blame, review diffs, and more right from vim using <a href="https://github.com/tpope/vim-fugitive" target="_blank" rel="noopener noreferrer">Fugitive</a>.</li>
+                  <li><i class="fas fa-check"></i> Browser your file tree in vim using <a href="https://github.com/scrooloose/nerdtree" target="_blank" rel="noopener noreferrer">Nerdtree</a> and <a href="https://github.com/jistr/vim-nerdtree-tabs" target="_blank" rel="noopener noreferrer">Tabs</a>.</li>
+                  <li><i class="fas fa-check"></i> Full path and fuzzy text search for your entire project in vim with <a href="https://github.com/kien/ctrlp.vim" target="_blank" rel="noopener noreferrer">Cntrl-P</a>.</li>
+                  <li><i class="fas fa-check"></i> Full-fledged debugger for XDebug in vim using <a href="https://github.com/vim-vdebug/vdebug" target="_blank" rel="noopener noreferrer">VDebug</a>.</li>
+                  <li><i class="fas fa-check"></i> Jump to definition to review functions, classes, or methods with <a href="https://github.com/universal-ctags/ctags" target="_blank" rel="noopener noreferrer">Ctags</a>.</li>
+                </ul>
+              </div>
+              <div class="item col-lg-6 col-md-12 col-12">
+                <ul class="feature-list list-unstyled">
+                  <li><i class="fas fa-check"></i> PHP linting for Drupal coding standards using <a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank" rel="noopener noreferrer">PHPCS</a>.</li>
+                  <li><i class="fas fa-check"></i> Browse the structure of files and jump to declarations with <a href="https://github.com/majutsushi/tagbar" target="_blank" rel="noopener noreferrer">Tagbar</a>.</li>
+                  <li><i class="fas fa-check"></i> Smart command completion and git context for your shell using <a href="https://github.com/fish-shell/fish-shell" target="_blank" rel="noopener noreferrer">Fish</a>.</li>
+                  <li><i class="fas fa-check"></i> Manage project dependencies using industry standard <a href="https://github.com/composer/composer" target="_blank" rel="noopener noreferrer">Composer</a> for PHP.</li>
+                  <li><i class="fas fa-check"></i> Localhost with SSL/TLS encryption already setup using <a href="https://github.com/openssl/openssl" target="_blank" rel="noopener noreferrer">OpenSSL</a>.</li>
+                </ul>
+              </div>
+            </div>
+        </div><!--//container-->
+    </section><!--//features-->
+
+    <!-- ******DOCS****** -->
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Getting Started</h2>
+            <div class="block">
+                <h3 class="sub-title text-center">Installation</h3>
+                <br />
+                <p><strong>Before Installation:</strong> Make sure you have <a href="https://docs.docker.com/install/" target="_blank" rel="noopener noreferrer">Docker installed</a>.</p>
+                <p>Download Vesl from GitHub:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+wget https://raw.githubusercontent.com/Jantcu/vesl/master/vesl
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Make the file executable:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+chmod u+x vesl
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Move the file into your path so you can run it from anywhere:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+mv vesl /usr/local/bin/vesl
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>If it's working you should be able to type <code>vesl</code> into your terminal and see:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+                _        _~
+__   _____  ___| |   _~ )_)_~
+\ \ / / _ \/ __| |   )_))_))_)
+ \ V /  __/\__ \ |   _!__!__!_
+  \_/ \___||___/_|   \_______/
+
+~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~
+^~^~^~^~^~^~^~^~^~^~^~^~^~^~^~^
+                  </code></pre>
+                </div><!--//code-block-->
+            </div><!--//block-->
+
+            <div class="block">
+                <h3 class="sub-title text-center">Creating a Vesl</h3>
+                <br />
+                <p>Download the current version of Drupal 8 and unzip the files:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+wget https://www.drupal.org/download-latest/zip
+unzip zip
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Move inside the Drupal project (<strong>note your directory will likely have a different name</strong>):</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+cd drupal-8.6.4/ # Use the version you actually downloaded.
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Load the Drupal Blueprint into Vesl (<strong>only needs to be done on setup or if you want a newer version of the blueprint</strong>):</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+vesl load drupal
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Create a new vesl using the Drupal blueprint and name it when prompted:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+vesl cast drupal
+Name your vesl: whatever_name_you_like
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p><strong>Optional:</strong> List all your Vesls to see info about them (<strong>Use the IP and Port listed for running Vesls to access your site in your web browser, example:</strong> <a href="https://0.0.0.0:443" target="_blank" rel="noopener noreferrer">https://0.0.0.0:443</a>):</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+vesl list
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>Attach to your container so you can start working on your site using the developer tools included with Vesl:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+vesl sail whatever_name_you_chose
+                  </code></pre>
+                </div><!--//code-block-->
+                <br />
+                <p>When you're all set you can clean up this demo by deleting your Vesl:</p>
+                <div class="code-block">
+                  <pre><code class="language-bash">
+exit # You need to leave the Vesl shell you're attached to first.
+vesl dock whatever_name_you_chose # You need to stop the Vesl before deleting it.
+vesl sink whatever_name_you_chose # Then confirm you want to delete forever.
+Are you sure you want to permanently delete test_delete (y/n)? y
+                  </code></pre>
+                </div><!--//code-block-->
+            </div><!--//block-->
+
+            <div class="block">
+                <h3 class="sub-title text-center">Full Documentation</h3>
+                <br />
+                <p>If you'd like more in depth documentation about all the commands you can run with Vesl, please checkout the repository on GitHub.</p>
+                <p class="text-center">
+                    <a class="btn btn-cta-primary" href="https://github.com/Jantcu/vesl" target="_blank" rel="noopener noreferrer">More on GitHub</a>
+                </p>
+            </div><!--//block-->
+
+            </div><!--//docs-inner-->
+        </div><!--//container-->
+    </section><!--//features-->
+
+    <!-- ******LICENSE****** -->
+    <section id="license" class="license section">
+        <div class="container">
+            <div class="license-inner">
+            <h2 class="title text-center">License</h2>
+                <div class="info">
+                  <p>Vesl was created by <a href="http://jantcu.com" target="_blank" rel="noopener noreferrer">Jantcu</a> and is <strong>100% FREE and OPEN SOURCE</strong> under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" rel="noopener noreferrer">MIT License</a>.</p>
+                  <p>A copy of this <a href="https://github.com/Jantcu/vesl/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">license is include in the repository</a>.</p>
+                </div><!--//info-->
+                <div class="cta-container">
+                    <div class="speech-bubble">
+                        <p class="intro">If Vesl has helped you in a meaningful way and you'd like to contribute to keeping the project moving forward, we appreciate it. Thank you Open Source hero!</p>
+                        <div class="icon-holder  text-center"><i class="far fa-smile"></i></div>
+                    </div><!--//speech-bubble-->
+                    <div class="btn-container  text-center">
+                        <a class="btn btn-cta-secondary" href="/donate">Support Vesl</a>
+                    </div><!--//btn-container-->
+                </div><!--//cta-container-->
+            </div><!--//license-inner-->
+        </div><!--//container-->
+    </section><!--//how-->
+
+    <!-- ******CONTACT****** -->
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">Contact</h2>
+                <p class="intro  text-center">We hope you find Vesl useful for your CMS projects. <br />Feel free to get in touch if you have any questions or suggestions.</p>
+                <div class="author-message">
+                    <div class="profile">
+                        <img class="img-fluid" src="assets/images/jimafisk.png" alt="" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Why Vesl was created</h3>
+                        <p>Vesl came out of a Drupal core sprint in January 2017 when we found that new contributors were spending a full day trying to spin up a local Drupal environment. They were frustrated and discouraged before even writing any code so we <a href="https://youtu.be/180WFm3R0eI" target="_blank" rel="noopener noreferrer">began working on a solution</a>. There were similar tools entering the space around the same time, but they all seemed focused on customization, which is great for handling all sorts of edge cases, but often adds unneeded complexity for setup and use. We decided to go the other direction with Vesl and created a one-size-fits-most product that is designed around simplicity and consistency. This makes Vesl a perfect candidate as a learning tool to be used for demos, code sprints, and projects that follow standard Drupal convention.</p>
+                        <p><strong>Other great projects:</strong> Vesl was designed to be dead simple, so in keeping with that goal, down the road you might find it's missing some more advanced features. If your environment needs to be more extensible, we recommend checking out some other excellent docker based orchestration tools like <a href="https://docs.devwithlando.io/" target="_blank" rel="noopener noreferrer">Lando</a> or <a href="https://docksal.io/" target="_blank" rel="noopener noreferrer">Docksal</a>.</p>
+                        <div class="source">
+                            <span class="name"><a href="https://twitter.com/jimafisk" target="_blank" rel="noopener noreferrer">Jim Fisk</a></span>
+                            <br />
+                            <span class="title">Founder at Jantcu</span>
+                        </div><!--//source-->
+                    </div><!--//speech-bubble-->
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="https://twitter.com/jantcutech" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/jantcu" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCyOXWTxea5FbOcyIjbB9SvA" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a></li>
+
+                        <li class="list-inline-item last"><a href="mailto:vesl@jantcu.com"><i class="fas fa-envelope"></i></a></li>
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Designed by <a href="https://themes.3rdwavemedia.com" target="_blank" rel="noopener noreferrer">Xiaoying Riley</a> Modified by <a href="http://jantcu.com" target="_blank" rel="noopener noreferrer">Jantcu</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/min/prism.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+
+</body>
+</html>
+
