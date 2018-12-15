@@ -1,13 +1,7 @@
-image: monachus/hugo
-
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
-
 pages:
   script:
-  - hugo
+  - gem install jekyll
+  - jekyll build -d public
   artifacts:
     paths:
     - public
-  only:
-  - master
