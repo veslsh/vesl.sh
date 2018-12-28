@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -e
+
+export ROOT_DOMAIN=vesl.sh # Used by certbot hooks
+EMAIL=jim.fisk@jantcu.com
+DOMAIN=vesl.sh
+
+certbot certonly --manual \
+  -n \
+  --manual-public-ip-logging-ok \
+  --text --agree-tos --email $EMAIL \
+  --preferred-challenges dns \
+  --config-dir certbot/config \
+  --work-dir certbot/work \
+  --logs-dir certbot/logs \
+  -d $DOMAIN
+
+
+CERT_FILE=certbot/config/live/$DOMAIN/fullchain.pem
+KEY_FILE=certbot/config/live/$DOMAIN/privkey.pem
+
+curl \
+  --silent \
+  --fail \
+  --show-error \
+  -X PUT \
+  -H "PRIVATE-TOKEN: $GITLAB_PERSONAL_ACCESS_TOKEN" \
+  --form "certificate=@$CERT_FILE" \
+  --form "key=@$KEY_FILE" \
+  https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/pages/domains/$DOMAIN > /dev/null

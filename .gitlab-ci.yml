@@ -5,3 +5,26 @@ pages:
   artifacts:
     paths:
     - public
+  only:
+  - master
+  except:
+  - schedules
+
+update_ssl_cert:
+  image: ubuntu:16.04
+  only:
+  - schedules
+  script:
+  - apt-get update
+  - apt-get -yq install software-properties-common
+  - add-apt-repository ppa:certbot/certbot
+  - apt-get update
+  - apt-get install -yq tzdata locales
+  - echo "Australia/Sydney" > /etc/timezone
+  - dpkg-reconfigure -f noninteractive tzdata
+  - echo 'LANG="en_US.UTF-8"'>/etc/default/locale
+  - dpkg-reconfigure --frontend=noninteractive locales
+  - update-locale LANG=en_US.UTF-8
+  - apt-get -yq install python-certbot-apache
+  - apt-get -yq install curl
+  - update-ssl-cert
