@@ -24,4 +24,4 @@ update_ssl_cert:
   - dpkg-reconfigure -f noninteractive tzdata
   - apt-get -yq install python-certbot-apache
   - apt-get -yq install curl
-  - update-ssl-cert
+  - bash update-ssl-cert
