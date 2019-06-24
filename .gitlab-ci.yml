@@ -10,18 +10,18 @@ pages:
   except:
   - schedules
 
-update_ssl_cert:
-  image: ubuntu:16.04
-  only:
-  - schedules
-  script:
-  - apt-get update
-  - apt-get -yq install software-properties-common
-  - add-apt-repository ppa:certbot/certbot
-  - apt-get update
-  - apt-get install -yq tzdata locales
-  - echo "Australia/Sydney" > /etc/timezone
-  - dpkg-reconfigure -f noninteractive tzdata
-  - apt-get -yq install python-certbot-apache
-  - apt-get -yq install curl
-  - bash update-ssl-cert
+#update_ssl_cert:
+#  image: ubuntu:16.04
+#  only:
+#  - schedules
+#  script:
+#  - apt-get update
+#  - apt-get -yq install software-properties-common
+#  - add-apt-repository ppa:certbot/certbot
+#  - apt-get update
+#  - apt-get install -yq tzdata locales
+#  - echo "Australia/Sydney" > /etc/timezone
+#  - dpkg-reconfigure -f noninteractive tzdata
+#  - apt-get -yq install python-certbot-apache
+#  - apt-get -yq install curl
+#  - bash update-ssl-cert
